@@ -1,6 +1,6 @@
   .center {
     margin: auto;
-    width: 70%;
+    width: 100%;
     padding: 10px;
   }
 
@@ -11,7 +11,8 @@
   /* Style the body */
   body {
     font-family: Arial;
-    margin: 0;
+    padding: 10px;
+    background: #f1f1f1;
   }
   
   /* Header/logo Title */
@@ -24,18 +25,18 @@
   
   /* Style the top navigation bar */
   .navbar {
-    align-items: center;
-    padding: 10px;
-    display: flex;
+    overflow: hidden;
     background-color: #333;
   }
   
   /* Style the navigation bar links */
   .navbar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
+    float: left;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
   
   /* Change color on hover */
@@ -49,12 +50,19 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .accesorios {  
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
   
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
     flex: 30%;
-    background-color: #f1f1f1;
+    background-color: rgba(216, 214, 214, 0.918);
     padding: 20px;
   }
   
@@ -75,12 +83,32 @@
   
   /* Footer */
   .footer {
-    padding: 5px;
+    padding: 10px;
     color: darkgray;
     text-align: center;
     background: #ddd;
   }
-  
+
+  .footer > div{
+    border-radius: 5px;
+    background: #ddd;
+    color: lightgray;
+    padding: 20px;
+  }
+
+  .rowf {  
+    display: flex;
+    flex-wrap: wrap;
+    background: #ddd;
+  }
+
+  .rowf > div{
+    border-radius: 5px;
+    background: #ddd;
+    color: lightgray;
+    padding: 20px;
+  }
+
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
     .row, .navbar {   
@@ -135,7 +163,7 @@
 
   div {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 20px;
   }
 
@@ -191,6 +219,11 @@
     text-align: center;
     color: black;
   }
+  h4 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.575);
+  }
+
   ul.b {
     list-style-type: square;
   }
