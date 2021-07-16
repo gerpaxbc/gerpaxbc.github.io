@@ -75,7 +75,7 @@ document.querySelector('#calcular').addEventListener('click',function(){
     document.getElementById('resultado').textContent="";
     document.getElementById('r1').value="";
     document.getElementById('r2').value="";
-    document.getElementById('na').textContent="";
-    document.getElementById('nb').textContent="";
-    document.getElementById('nc').textContent="";
+    document.getElementById('na').textContent= "";
+    document.getElementById('nb').textContent= "";
+    document.getElementById('nc').textContent= "";
  })
