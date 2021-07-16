@@ -78,4 +78,7 @@ document.querySelector('#calcular').addEventListener('click',function(){
     document.getElementById('na').textContent= "";
     document.getElementById('nb').textContent= "";
     document.getElementById('nc').textContent= "";
+    document.getElementById('na').value= "";
+    document.getElementById('nb').value= "";
+    document.getElementById('nc').value= "";
  })
