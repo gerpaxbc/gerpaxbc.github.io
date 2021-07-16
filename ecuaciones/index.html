@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ucamp, Ecuaciones de segundo grado</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Ecuaciones de segundo grado</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+<div class="row">
+    <div class="col-3 menu">
+      <ul>
+        <li><div class="eq-c">
+            ax<sup>2</sup> + bx + c = 0
+            </div>
+            <br>
+            Si es una Ecuación completa (b y c diferentes de 0) se tienen las siguientes soluciones:
+            
+            <br>
+            <br>
+            <div class="eq-c">
+                x<sub>1</sub> =  <div class="fraction">
+                    <span class="fup"> -b +  <span class="radical"><span class="n-root"></span>&radic;</span><span class="radicand">b<sup>2</sup> - 4ac  </span> </span>
+                    <span class="bar">/</span>
+                    <span class="fdn"><i>2a</i></span>
+                </div>    
+            </div>
+            
+            <div class="eq-c">
+                x<sub>2</sub> =  <div class="fraction">
+                    <span class="fup"> -b -  <span class="radical"><span class="n-root"></span>&radic;</span><span class="radicand">b<sup>2</sup> - 4ac  </span> </span>
+                    <span class="bar">/</span>
+                    <span class="fdn"><i>2a</i></span>
+                </div>    
+            </div>            
+        </li>
+
+        <li><div class="eq-c">
+            Si b=0 se tienen la siguiente solución:
+            
+            <br>
+            <br>
+            <div class="eq-c">
+                x<sub>1</sub> =  <div class="fraction">
+                    <span class="fup">  <span class="radical"><span class="n-root"></span>&radic;</span><span class="radicand"><sup></sup> - c / a  </span> </span>
+                </div>    
+            </div>
+            
+            <div class="eq-c">
+                x<sub>2</sub> =  <div class="fraction">
+                    <span class="fup">-<span class="radical"><span class="n-root"></span>&radic;</span><span class="radicand"><sup></sup> - c / a  </span> </span>
+                </div>    
+            </div>            
+          </div>            
+        </li>
+
+        <li><div class="eq-c">
+          Si c=0 se tienen la siguiente solución:
+          
+          <br>
+          <br>
+          <div class="eq-c">
+              x<sub>1</sub> = 0 
+          </div>
+          
+          <div class="eq-c">
+            x<sub>2</sub> =  <div class="fraction">
+                <span class="fup"> -b </span>
+                <span class="bar">/</span>
+                <span class="fdn"><i>a</i></span>
+            </div>    
+            </div>
+          </div>   
+        </li>  
+
+        <li><div class="eq-c">
+          Si b=0 y c=0 se tienen la siguiente solución:
+          
+          <br>
+          <br>
+          <div class="eq-c">
+              x<sub>1</sub> = 0 
+          </div>
+          
+          <div class="eq-c">
+            x<sub>2</sub> = 0 
+        </div>
+        </li>  
+
+
+      </ul>
+
+
+    </div>
+  
+    <div class="col-9">
+      <h1>Ecuaciones de segundo grado</h1>
+      <div class="grid-container">
+        <div>
+          <input class="dato" type="text" id="va"> X<sup>2</sup> + <input class="dato" type="text" id="vb"> X + <input class="dato" type="text" id="vc"> = 0 <br> <br>
+          <button type="button" class="btn btn-danger" id="calcular">Calcular</button>
+          <button type="button" class="btn" id="limpiar">Limpiar</button>
+          <br>
+          <h4>
+            <li Id="na"></li>
+            <li Id="nb"></li>
+            <li Id="nc"></li>
+        </h4>
+        </div>
+      </div>      
+    </div>
+
+    <div class="col-9">
+      <h1>Solución:</h1>
+      
+        <div>
+          <div class="panelres" Id="resultado"></div> <br>
+          
+          X<sub>1</sub> = <input class="datores" type="text" id="r1" > <br>
+          X<sub>2</sub> = <input class="datores" type="text" id="r2" >
+          
+        </div>
+      
+    </div>
+</div>
+
+<br>
+<br>
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a class="fa fa-facebook-official w3-hover-opacity"  target="_blank" href="https://www.facebook.com/gerardo.paxtian.1"> </a>
+    <a class="fa fa-linkedin w3-hover-opacity"  target="_blank"  href="https://www.linkedin.com/in/gerpax/"></a>
+    <p class="w3-medium">Powered by UCamper gerpax</a></p>
+</footer>
+
+
+<script src="functions.js"> </script>
+</body>
+</html>

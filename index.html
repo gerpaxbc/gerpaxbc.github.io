@@ -14,29 +14,35 @@
 </head>
 
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Portafolio</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Portafolio</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Proyectos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="./landing/index.html">Landing de ventas</a></li>
+              <li><a href="./calculadora/index.html">Calculadora</a></li>
+              <li><a href="./ecuaciones/index.html">Ecuaciones</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="./landing/index.html">Landing de ventas</a></li>
-        <li><a href="./calculadora/index.html">Calculadora</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
 <div class="jumbotron">
   <div class="container text-center">
@@ -54,13 +60,23 @@
             </a>  
             <h4>Todo sobre ciclismo</h4>
         </div>
+
         <div class="col-sm-3"> 
-            <h4>Cacluladora</h4>
+            <h4>Caclulad<ora/h4>
             <a href="./calculadora/index.html">
                 <img src="./images/calculadora.png" class="img-responsive" style="width:100%" alt="Image">
             </a>  
             <h4>Calculadora básica con factorial</h4>
         </div>
+
+        <div class="col-sm-3"> 
+            <h4>Ecuaciones</h4>
+            <a href="./ecuaciones/index.html">
+                <img src="./images/ecuacion.png" class="img-responsive" style="width:100%" alt="Image">
+            </a>  
+            <h4>Ecuaciones de segundo grado</h4>
+        </div>
+
     </div>
 </div>
 <br>
