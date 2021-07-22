@@ -37,6 +37,12 @@
     width: 50px;
   }
 
+  .datolargo{
+    background-color: white;
+    color: red;
+    border: white;
+    width: 500px;
+  }
   .datores{
     background-color: white;
     color: red;
