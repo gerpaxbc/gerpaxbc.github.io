@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ucamp, Proyecto 2</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Aplicación CRUD</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/index.html">Home</a></li>
+        </ul>
+        </div>
+    </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    
+    <div class="w3-card-1">
+      <div class="w3-container w3-teal">
+        <h2>Nueva actividad</h2>
+      </div>
+        <p>      
+        <label class="w3-text-gray"><b>Nombre</b></label>
+        <input id="nombre" class="w3-input w3-border w3-white" name="nombre" type="text"></p>
+        <p>      
+        <label class="w3-text-gray"><b>Actividad</b></label>
+        <input id="actividad" class="w3-input w3-border w3-white" name="actividad" type="text"></p>
+        <p>      
+          <label class="w3-text-gray"><b>Fecha</b></label>
+          <input  id="fecha" class="w3-input w3-border w3-white" name="fecha" type="date"></p>
+        
+        <p>
+        <button id="guardar" class="w3-btn w3-teal">Guardar</button>
+        <button id="cancelar" class="w3-btn w3-teal">Cancelar</button>
+     
+    </div>
+
+    <p>
+      Buscar por:
+      <input id="bnombre" class="w3-radio" type="radio" name="buscar" value="nombre" checked>
+      <label>Nombre</label>
+      <input id="bacti"  class="w3-radio" type="radio" name="buscar" value="actividad">
+      <label>Actividad</label>
+      <input class="w3-input w3-border w3-padding" type="text" placeholder="Buscar..." id="myInput" onkeyup="myFunction()">
+    </p>
+  <section class ="section"> </section>
+
+</div>
+</div>
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
